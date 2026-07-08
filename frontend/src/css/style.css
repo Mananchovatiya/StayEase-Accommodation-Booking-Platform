@@ -1,0 +1,297 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* index route */
+
+/* navbar */
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.nav-link {
+    color: black !important;
+    margin-left: 15px;
+}
+
+.fa-compass {
+    font-size: 2rem;
+    color: rgb(246, 34, 34);
+}
+
+.listing-card {
+    border: none;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+.card-img-top {
+    border-radius: 1rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 0 !important
+}
+
+.card-text {
+    font-weight: 400 !important;
+    color: black;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.listing-links {
+    text-decoration: none;
+}
+
+.listing-details {
+    font-size: 1.20rem;
+    line-height: 1.7;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: whitesmoke;
+}
+
+/* show route */
+
+.add-btn {
+    background-color: rgb(246, 34, 34) !important;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.show-img {
+    height: 40vh;
+    margin-bottom: 1rem;
+}
+
+/* footer */
+
+
+.f-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.191);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.f-info-icons,
+.f-info-brand,
+.f-info-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.f-info-icons a i {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.f-info-icons a i:hover {
+    cursor: pointer;
+}
+
+.f-info-links a {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* search */
+.search-btn {
+    background-color: rgb(246, 34, 34);
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.search-btn:hover {
+    background-color: rgb(246, 34, 34);
+    color: white;
+}
+
+.search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.search-inp {
+    border-radius: 1.5rem;
+    padding: 0.5rem 3rem 0.5rem 1rem;
+}
+
+/* filters */
+.filters {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    gap: 25px;
+    padding: 10px 20px;
+    /* space for arrows */
+}
+
+/* hide scrollbar */
+.filters::-webkit-scrollbar {
+    display: none;
+}
+
+/* each filter */
+.filter {
+
+    margin-top: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    flex: 0 0 auto;
+    min-width: 80px;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* tax toggle */
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    flex: 0 0 auto;
+    min-width: 220px;
+}
+
+/* NEW: container for arrows */
+.filters-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* arrow buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* positions */
+.left-btn {
+    left: 4px;
+}
+
+.right-btn {
+    right: 250px;
+}
+
+/* hide arrows on large screens */
+@media (min-width: 768px) {
+    .scroll-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-btn {
+        padding: 1px 3px;
+    }
+
+    .filters {
+        gap: 20px;
+    }
+
+    .navbar-collapse {
+        background: white;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav {
+        margin-bottom: 0.5rem;
+    }
+
+    .tax-toggle {
+        display: none;
+    }
+
+    .right-btn {
+        right: 0.5rem;
+    }
+}
+
+/* reviews */
+
+.review-card {
+    padding: 1.25rem;
+}
+
+.review-comment {
+    min-height: 60px;
+}
+
+.review-details {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.list {
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+.edit-btn {
+    width: 5rem;
+}

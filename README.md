@@ -1,1 +1,1 @@
-# Wanderlust — MERN Stack
+# StayEase — MERN Stack

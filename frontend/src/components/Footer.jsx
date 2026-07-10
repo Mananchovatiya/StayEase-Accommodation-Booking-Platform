@@ -14,7 +14,7 @@ function Footer() {
                     </a>
                 </div>
                 <div className="f-info-brand">
-                    &copy; Wanderlust Private Limited
+                    &copy; StayEase Private Limited
                 </div>
                 <div className="f-info-links">
                     <Link to="/privacy">Privacy</Link>

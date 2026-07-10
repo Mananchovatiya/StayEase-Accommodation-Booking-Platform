@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function ListingCard({ listing, showTax }) {
+function ListingCard({ listing }) {
     return (
         <Link to={`/listings/${listing._id}`} className="listing-links">
             <div className="card h-100 listing-card">
@@ -11,9 +11,6 @@ function ListingCard({ listing, showTax }) {
                     <p className="card-text mt-2">
                         <b>{listing.title}</b> <br />
                         &#8377; {listing.price.toLocaleString("en-IN")} / night
-                        <i className="tax-info" style={{ display: showTax ? "inline" : "none" }}>
-                            &nbsp; &nbsp; +18% GST
-                        </i>
                     </p>
                 </div>
             </div>

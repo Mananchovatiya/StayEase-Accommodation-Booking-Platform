@@ -12,7 +12,11 @@ function Navbar() {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        navigate(`/listings/search?query=${encodeURIComponent(query)}`);
+        if (!query.trim()) {
+            navigate("/listings");
+        } else {
+            navigate(`/listings/search?query=${encodeURIComponent(query)}`);
+        }
     };
 
     const handleLogout = async (e) => {

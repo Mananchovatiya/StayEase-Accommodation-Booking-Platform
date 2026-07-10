@@ -11,7 +11,6 @@ function Listings() {
     const [totalPages, setTotalPages] = useState(undefined);
     const [current, setCurrent] = useState(1);
     const [isSearchOrFilter, setIsSearchOrFilter] = useState(false);
-    const [showTax, setShowTax] = useState(false);
     const [loaded, setLoaded] = useState(false);
 
     const location = useLocation();
@@ -45,7 +44,7 @@ function Listings() {
 
     return (
         <>
-            <FilterBar showTax={showTax} onToggleTax={() => setShowTax(!showTax)} />
+            <FilterBar />
 
             {loaded && isSearchOrFilter && listings.length > 0 && (
                 <h5 className="mb-3">
@@ -61,7 +60,7 @@ function Listings() {
 
             <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
                 {listings.map((listing) => (
-                    <ListingCard key={listing._id} listing={listing} showTax={showTax} />
+                    <ListingCard key={listing._id} listing={listing} />
                 ))}
             </div>
 

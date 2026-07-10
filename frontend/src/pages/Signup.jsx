@@ -24,7 +24,7 @@ function Signup() {
         try {
             const res = await api.post("/signup", { username, email, password });
             setCurrUser(res.data.user);
-            flashSuccess("Welcome to Wanderlust");
+            flashSuccess("Welcome to StayEase");
             navigate("/listings");
         } catch (err) {
             flashError(err.response?.data?.message || "Something went wrong");
@@ -34,7 +34,7 @@ function Signup() {
     return (
         <div className="row">
             <div className="col-12 col-md-8 offset-md-2 mb-3 mt-3">
-                <h1>Signup for Wanderlust</h1>
+                <h1>Signup for StayEase</h1>
                 <form onSubmit={handleSubmit} noValidate
                     className={`needs-validation mt-4 ${validated ? "was-validated" : ""}`}>
                     <div className="mb-3">

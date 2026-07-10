@@ -10,7 +10,7 @@ module.exports.signup = async (req, res, next) => {
                 return next(err);
             }
             res.status(201).json({
-                message: "Welcome to Wanderlust",
+                message: "Welcome to StayEase",
                 user: {
                     _id: registerdUser._id,
                     username: registerdUser.username,
@@ -25,7 +25,7 @@ module.exports.signup = async (req, res, next) => {
 
 module.exports.login = async (req, res) => {
     res.json({
-        message: "Welcome back to Wanderlust",
+        message: "Welcome back to StayEase",
         user: {
             _id: req.user._id,
             username: req.user.username,

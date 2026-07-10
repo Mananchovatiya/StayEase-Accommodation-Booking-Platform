@@ -14,7 +14,7 @@ const FILTERS = [
     { category: "Boats", icon: "fa-solid fa-ship", label: "Boats" },
 ];
 
-function FilterBar({ showTax, onToggleTax }) {
+function FilterBar() {
     const filtersBarRef = useRef(null);
     const leftBtnRef = useRef(null);
     const rightBtnRef = useRef(null);
@@ -65,16 +65,6 @@ function FilterBar({ showTax, onToggleTax }) {
             <button className="scroll-btn right-btn" ref={rightBtnRef} onClick={() => scrollFilters(200)}>
                 <i className="fa-solid fa-chevron-right"></i>
             </button>
-
-            <div className="tax-toggle">
-                <div className="form-check-reverse form-switch">
-                    <input className="form-check-input" type="checkbox" role="switch" id="switchCheckDefault"
-                        checked={showTax} onChange={onToggleTax} />
-                    <label className="form-check-label" htmlFor="switchCheckDefault">
-                        Display total after taxes
-                    </label>
-                </div>
-            </div>
         </div>
     );
 }

@@ -24,7 +24,7 @@ function Login() {
         try {
             const res = await api.post("/login", { username, password });
             setCurrUser(res.data.user);
-            flashSuccess("Welcome back to Wanderlust");
+            flashSuccess("Welcome back to StayEase");
 
             // redirect-after-login (same as saveRedirectUrl middleware)
             const redirectUrl = location.state?.from || "/listings";

@@ -5,6 +5,13 @@ body {
     min-height: 100vh;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
 .container {
     flex: 1;
 }
@@ -95,8 +102,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(128, 128, 128, 0.191);
-    padding: 1rem 0;
-    margin-top: 2rem;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
     width: 100%;
 }
 
@@ -193,18 +200,6 @@ body {
     margin: 0;
 }
 
-/* tax toggle */
-.tax-toggle {
-    border: 1px solid black;
-    border-radius: 1rem;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 0.75rem;
-    flex: 0 0 auto;
-    min-width: 220px;
-}
-
 /* NEW: container for arrows */
 .filters-container {
     position: relative;
@@ -232,7 +227,7 @@ body {
 }
 
 .right-btn {
-    right: 250px;
+    right: 10px;
 }
 
 /* hide arrows on large screens */
@@ -261,10 +256,6 @@ body {
 
     .navbar-nav {
         margin-bottom: 0.5rem;
-    }
-
-    .tax-toggle {
-        display: none;
     }
 
     .right-btn {

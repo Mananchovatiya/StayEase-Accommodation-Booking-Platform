@@ -5,11 +5,11 @@ function Footer() {
         <footer>
             <div className="f-info">
                 <div className="f-info-icons">
-                    <a href="https://github.com/HetviGonawala" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/Mananchovatiya" target="_blank" rel="noreferrer">
                         <i className="fa-brands fa-github"></i>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/hetvi-gonawala-aa400b411/" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/mananchovatiya/" target="_blank" rel="noreferrer">
                         <i className="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
